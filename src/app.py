@@ -15,7 +15,7 @@ st.set_page_config(page_title="🧠 AI Decision Simulator", layout="wide")
 st.title("🧠 AI Meeting → Future Action Simulator")
 st.markdown("*Extract decisions from meetings and simulate future consequences*")
 
-# Initialize
+# Initialization
 if 'extractor' not in st.session_state:
     st.session_state.extractor = DecisionExtractor()
 if 'graph' not in st.session_state:
@@ -55,10 +55,9 @@ with st.sidebar:
             st.session_state.graph.build(extracted)
         st.success("✅ Extraction Complete!")
 
-# Main area
+# Main area startd here
 if st.session_state.extracted:
     extracted = st.session_state.extracted
-    
     col1, col2 = st.columns(2)
     
     with col1:
@@ -79,7 +78,6 @@ if st.session_state.extracted:
     with col2:
         st.subheader("📊 Knowledge Graph")
         img_buf = st.session_state.graph.draw_graph()
-        # 🔥 FIX: use_container_width instead of use_column_width
         st.image(img_buf, use_container_width=True)
         
         graph_info = st.session_state.graph.get_graph_info()
