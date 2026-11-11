@@ -1,0 +1,11 @@
+# Core
+langgraph>=0.2.12
+langchain>=0.2.15
+langchain-groq>=0.2.2
+streamlit>=1.29.0
+python-dotenv>=1.0.0
+pydantic>=2.9.0
+
+# Graph
+networkx>=3.3
+matplotlib>=3.9.0
