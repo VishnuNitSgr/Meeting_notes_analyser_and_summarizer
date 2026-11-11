@@ -8,7 +8,7 @@ import json
 import re
 
 class DecisionExtractor:
-    def __init__(self, model="groq/compound-mini"):
+    def __init__(self, model="openai/gpt-oss-120b"):
         self.llm = ChatGroq(
             model=model,
             temperature=0.2,
