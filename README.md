@@ -862,7 +862,7 @@ You are free to:
 
 # 👨‍💻 Author
 
-## Vishnu Narayan Tripathi , Mohammad Abrar Hussain
+## Vishnu Narayan Tripathi , Mohammad Abraar Hussain, Alok Kumar
 
 
 
